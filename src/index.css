@@ -239,3 +239,61 @@ header {
     width: 100%;
     height: 27.5rem;
 }
+
+.front {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+}
+
+.front>.elements-left, .front>.elements-right {
+    width: 50%;
+    height: 100%;
+}
+
+.front>.elements-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.front>.elements-left>.element {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pad-3);
+}
+
+.front>.elements-left>.element>.title {
+    font-size: var(--fs-tps);
+    color: var(--clr-st);
+}
+
+.front>.elements-left>.element>.list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.front>.elements-right {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.front>.elements-right img {
+    padding: calc(2 * var(--pad-1));
+    padding-right: 0;
+}
+
+.back {
+    z-index: -1;
+    position: absolute;
+    font-size: 16vw;
+    color: var(--clr-ter);
+    width: 100%;
+    text-align: center;
+    bottom: -6.5vw;
+}
