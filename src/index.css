@@ -59,6 +59,7 @@ header {
     display: flex;
     align-items: center;
     gap: var(--pad-2);
+    min-width: fit-content;
 }
 
 .top-bar .menu .m-e-v {
@@ -70,7 +71,6 @@ header {
 
 .page {
     position: relative;
-    padding: calc(100vh - var(--bor-rad-1)) var(--pad-1) 27.5rem var(--pad-1);
     height: 100%;
     width: 100%;
 }
@@ -80,10 +80,9 @@ header {
     display: flex;
     flex-direction: column;
     gap: 6.5rem;
-    width: 100%;
-    height: 100%;
     z-index: 99;
     padding: var(--pad-2);
+    margin: calc(100vh - var(--bor-rad-1)) var(--pad-1) 27.5rem var(--pad-1);
 }
 
 .page-content::before {
