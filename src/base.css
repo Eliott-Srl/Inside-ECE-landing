@@ -95,6 +95,7 @@ iframe {
 :root {
     --clr-txt:  #FBFCFC;
     --clr-par:  #C8CDDC;
+    --clr-st:   #757D95;
     --clr-bg:   #1A2139;
     --clr-pri:  #02B8C5;
     --clr-sec:  #121626;
@@ -112,10 +113,10 @@ iframe {
     --bor-rad-2: 1.5rem;
     --bor-rad-3: 1rem;
 
-    --pad-1: 2.5rem;
-    --pad-1-inverse: -2.5rem;
-    --pad-2: 1.5rem;
-    --pad-3: 1rem;
+    --pad-1:            2.5rem;
+    --pad-1-inverse:    -2.5rem;
+    --pad-2:            1.5rem;
+    --pad-3:            1rem;
 }
 
 body {
