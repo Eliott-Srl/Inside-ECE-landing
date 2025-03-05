@@ -12,7 +12,10 @@ let val_entrer = parseFloat(style.getPropertyValue('--font-size')) * (parseFloat
 
 const tl_rentrer = gsap.timeline({
     scrollTrigger: {
-        markers: false,
+        markers: {
+            visible: true,
+            label: "entree"
+        },
         trigger: "#bento-ctf",
         start: "top 50%",
         end: "top " + val_entrer.toString(),
@@ -30,19 +33,23 @@ tl_rentrer.to("html", {
 
 gsap.to("#hero", {
     scrollTrigger: {
-        trigger: "#metiers",
+        trigger: ".page-content",
         markers: false,
-        start: "top 50%",
-        end: "top 50%",
+        start: "50% 50%",
+        end: "50% 50%",
         toggleActions: "play none none reset"
     },
-    display: "none",
+    opacity: 0,
+    zIndex: -2,
     duration: 0.01
 })
 
 const tl_sortie = gsap.timeline({
     scrollTrigger: {
-        markers: false,
+        markers: {
+            visible: true,
+            label: "sortie"
+        },
         trigger: "#metiers",
         start: "bottom 90%",
         end: "bottom 50%",

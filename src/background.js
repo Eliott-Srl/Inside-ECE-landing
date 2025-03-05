@@ -11,7 +11,7 @@ App.setup = function() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     this.canvas = canvas;
-    this.rext = document.getElementById("hero").children[0].getBoundingClientRect();
+    this.rext = document.getElementById("hero").children[1].getBoundingClientRect();
     document.getElementById("canvas").appendChild(canvas);
     this.ctx = this.canvas.getContext('2d');
     this.width = this.canvas.width;
@@ -43,7 +43,6 @@ App.setup = function() {
                 r0 = 150,
                 field;
 
-            console.log(this.xC)
             if (xx - 110 > this.rext.left - this.xC && xx + 110 < this.rext.right - this.xC && yy - 79 > this.rext.top - this.yC && yy + 65 < this.rext.bottom - this.yC) {
                 field = 255 / r0 * r;
             } else {

@@ -36,12 +36,16 @@ header {
     top: 0;
     min-height: 100vh;
     width: 100%;
+    background-color: var(--clr-bg);
 }
 
 .hero-content {
+    display: flex;
     position: relative;
-    /*left: -10%;*/
     width: 30rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
 }
 
 #hero h1 {
@@ -251,7 +255,7 @@ header {
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    width: fit-content;
+    width: max-content;
     gap: calc(var(--pad-3) - 2%);
     background-color: var(--clr-pri);
     color: var(--clr-qua);
@@ -268,6 +272,27 @@ header {
 .button>svg {
     width: 1.25rem;
     height: 1.25rem;
+}
+
+#metiers>.content {
+    display: flex;
+    align-items: center;
+}
+
+#metiers>.content>.elements-left {
+    display: flex;
+}
+
+#metiers>.content>.elements-left>.element {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-bg);
+    border-radius: var(--bor-rad-2);
+    gap: var(--pad-2);
+}
+
+#metiers>.content>.elements-left>.element>.text {
+    font-size: var(--fs-tps);
 }
 
 #footer {
