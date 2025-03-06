@@ -5,6 +5,8 @@ html {
     --c-b-height: 0px;
     --c-b-border-radius: var(--bor-rad-1);
 
+    --top-spacing: 100vh;
+
     background-color: var(--clr-bg);
 }
 
@@ -112,7 +114,7 @@ header {
     gap: 6.5rem;
     z-index: 99;
     padding: var(--pad-2);
-    margin: calc(100vh - var(--bor-rad-1)) var(--pad-1) 27.5rem var(--pad-1);
+    margin: calc(var(--top-spacing) - var(--bor-rad-1)) var(--pad-1) 27.5rem var(--pad-1);
 }
 
 .page-content::before {
