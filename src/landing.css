@@ -5,10 +5,6 @@ html {
     --c-b-height: 0px;
     --c-b-border-radius: var(--bor-rad-1);
 
-    --font-size: 20px;
-
-    font-size: var(--font-size);
-
     background-color: var(--clr-bg);
 }
 
