@@ -28,13 +28,25 @@ function raf(time) {
     requestAnimationFrame(raf);
 }
 
-// for (let button in document.getElementsByClassName("button-select")) {
-//     button.addEventListener("click", (event) => {
-//         if (!button.classList.contains("button-select")) {
-//             button.
-//         }
-//     })
-// }
+let buttons = document.getElementsByClassName("button-select");
+
+for (let i = 0; i < buttons.length; i++) {
+    let button = buttons[i];
+    button.addEventListener("click", (event) => {
+        if (!button.classList.contains("focus")) {
+            let parent = button.parentNode;
+            let enfants = parent.children;
+            for (let j = 0; j < enfants.length; j++) {
+                enfants[j].classList.toggle("focus");
+            }
+            let parparent = parent.parentNode.getElementsByClassName("content")[0];
+            for (let j = 0; j < parparent.children.length; j++) {
+                parparent.children[j].classList.toggle("focus");
+            }
+        }
+    })
+}
+
 
 // window.onresize = (event) => {
 //     console.log("--top-spacing: px;");

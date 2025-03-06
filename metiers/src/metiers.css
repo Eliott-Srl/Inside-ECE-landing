@@ -230,7 +230,7 @@ header {
 }
 
 .formations > .content > .element > .right > .select button {
-    padding: 0 var(--pad-3);
+    padding: 0 var(--pad-2);
 }
 
 .formations > .content > .element > .right > .select > .focus {
