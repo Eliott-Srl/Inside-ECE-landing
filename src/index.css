@@ -274,6 +274,16 @@ header {
     height: 1.25rem;
 }
 
+#metiers {
+    display: flex;
+    flex-direction: column;
+    gap: var(--bor-rad-3);
+}
+
+#metiers>.title {
+    font-size: var(--fs-t);
+}
+
 #metiers>.content {
     display: flex;
     align-items: center;
@@ -281,6 +291,7 @@ header {
 
 #metiers>.content>.elements-left {
     display: flex;
+    gap: var(--pad-3);
 }
 
 #metiers>.content>.elements-left>.element {
@@ -289,10 +300,43 @@ header {
     background-color: var(--clr-bg);
     border-radius: var(--bor-rad-2);
     gap: var(--pad-2);
+    width: 24vw;
+    padding: calc(var(--pad-2) / 2);
+    padding-bottom: var(--pad-2);
 }
 
 #metiers>.content>.elements-left>.element>.text {
     font-size: var(--fs-tps);
+    color: var(--clr-st);
+}
+
+
+#metiers>.content>.elements-left>.element>.text,
+#metiers>.content>.elements-left>.element>.title {
+    margin: 0 calc(var(--pad-2) / 2);
+}
+
+#metiers>.content>.elements-left>.element>.title {
+    font-size: var(--fs-s);
+}
+
+#metiers>.content>.elements-left>.element>.image {
+    width: 100%;
+    display: flex;
+    border-radius: var(--bor-rad-3);
+    background-color: var(--clr-qua);
+    justify-content: center;
+}
+
+#metiers>.content>.elements-left>.element>.image img {
+    width: 13rem;
+    transform: translateY(1.1rem);
+}
+
+#metiers>.content>.elements-right {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 #footer {

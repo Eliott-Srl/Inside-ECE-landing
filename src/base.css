@@ -102,9 +102,9 @@ iframe {
     --clr-ter:  #242C48;
     --clr-qua:  #0C121C;
 
-    --fs-t:     32px;
-    --fs-s:     24px;
-    --fs-tps:   20px;
+    --fs-t:     1.6rem;
+    --fs-s:     1.2rem;
+    --fs-tps:   1rem;
 
     --weight-normal: 400;
     --weight-bold:   700;
