@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="FR-fr">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../src/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./src/metiers.css"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Device -->
+    <!-- <meta name="viwport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5"/>
+    <meta name="format-detection" content="telephone=no">
+    <!-- Title -->
+    <title>Inside ECE — Accueil</title>
+    <!-- Description -->
+    <meta name="description" content="Site de CTFs mis en place par l'ECE en partenariat avec le Campus Cyber Nouvelle-Aquitaine.">
+    <!-- Social -->
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Inside ECE — Accueil">
+    <meta name="twitter:description" content="Site de CTFs mis en place par l'ECE en partenariat avec le Campus Cyber Nouvelle-Aquitaine.">
+    <meta name="twitter:image" content="#">
+    <!-- Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ece.fr">
+    <meta property="og:title" content="Inside ECE — Acceuil">
+    <meta property="og:description" content="Site de CTFs mis en place par l'ECE en partenariat avec le Campus Cyber Nouvelle-Aquitaine.">
+    <meta property="og:image" content="#">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Favicon -->
+    <meta name="theme-color" content="#1A2139">
+    <link rel="icon" type="image/x-icon" href="./public/logo%20ece%20cup.png">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        let txt = "%c Salut le \ud83e\udde1 Hacker \ud83e\udde1, sens-toi libre de visiter."
+        let args = ["font-size: 12px", "color: #fffce1", "font-family: monospace", "background: #0e100f", "display: inline-block", "padding: 1rem 3rem", "border: 1px solid #fffce1", "border-radius: 4px;"].join(";");
+        console.log(txt, args)
+    </script>
+</head>
+<body>
+    <section id="hero">
+        <header>
+            <div class="top-bar">
+                <div class="logo">
+                    <a href="../">
+                        <img class="logo" src="../public/ECE_x_campus_cyber_2.png" alt="Le logo du campus cyber nouvelle-aquitaine">
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href="/">Métiers</a>
+                    <a href="/">Se connecter</a>
+                    <a class="m-e-v" href="/">S'inscrire</a>
+                </div>
+            </div>
+        </header>
+        <div class="hero-content">
+            <h1 class="hero-title">Inside ECE</h1>
+            <h2 class="hero-subtitle">Le <span class="blue">Capture The Flag</span> organisé par le Campus Cyber Nouvelle-Aquitaine, en partenariat avec l’ECE.</h2>
+            <h3 class="hero-p-subtitle">Ce challenge de cybersécurité est conçu pour tester et améliorer vos compétences en hacking éthique, en forensic, en cryptographie, en reverse engineering et bien plus encore. Que vous soyez étudiant, passionné de cybersécurité ou expert du domaine, ce CTF vous mettra au défi à travers des épreuves variées et progressives.</h3>
+        </div>
+        <div id="canvas"></div>
+    </section>
+    <section class="page">
+        <div class="page-content">
+            <section id="metiers">
+                <div class="title">
+                    <p>Les métiers</p>
+                </div>
+                <div class="grid-container">
+                    <div class="grid">
+                        <div class="element">
+                            <div class="image">
+                                <img src="https://img.icons8.com/fluency/260/tester-female.png" alt="tester-female"/>
+                            </div>
+                            <div class="title">
+                                <p>Pen Tester</p>
+                            </div>
+                            <div class="text">
+                                <p>Le pentesteur est un expert en tests d’intrusion. Il simule des attaques pour identifier les failles de sécurité. Le pentesteur identifie les vulnérabilités et fait des recommendations.</p>
+                            </div>
+                        </div>
+                        <div class="element">
+                            <div class="image">
+                                <img src="https://img.icons8.com/fluency/260/landlord.png" alt="landlord"/>
+                            </div>
+                            <div class="title">
+                                <p>Ingénieur en Cybersécurité</p>
+                            </div>
+                            <div class="text">
+                                <p>L’ingénieur en cybersécurité conçoit des systèmes et des stratégies pour protéger les données sensibles. L’ingénieur en cybersécurité participe à la mise en conformité des infrastructures avec les normes et réglementations en vigueur.</p>
+                            </div>
+                        </div>
+                        <div class="element">
+                            <div class="image">
+                                <img src="https://img.icons8.com/fluency/260/admin-settings-male--v1.png" alt="admin-settings-male--v1"/>
+                            </div>
+                            <div class="title">
+                                <p>Responsable Sécurité des Systèmes d'Information</p>
+                            </div>
+                            <div class="text">
+                                <p>Le RSSI définit la politique de sécurité informatique et veille à sa mise en application. Le RSSI est en charge de la gestion de la sécurité et des ressources associées. Le RSSI définit la stratégie cybersécurité. Le RSSI s'assure de leur déclinaisons opérationnelles.</p>
+                            </div>
+                        </div>
+                        <div class="element">
+                            <div class="image">
+                                <img src="https://img.icons8.com/fluency/260/find-user-female.png" alt="find-user-female"/>
+                            </div>
+                            <div class="title">
+                                <p>Analyste SOC</p>
+                            </div>
+                            <div class="text">
+                                <p>L'analyste SOC surveille les systèmes informatiques en temps réel pour détecter et répondre aux cyberattaques. L'analyste SOC analyse, évalue et qualifie les alertes de sécurité. L'analyste SOC analyse, évalue et qualifie les alertes de sécurité.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/" class="button">
+                        <p>Voir plus</p>
+                        <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.8643 3.2666L11.9482 2.18262C12.4072 1.72363 13.1494 1.72363 13.6035 2.18262L23.0957 11.6699C23.5547 12.1289 23.5547 12.8711 23.0957 13.3252L13.6035 22.8174C13.1445 23.2764 12.4023 23.2764 11.9482 22.8174L10.8643 21.7334C10.4004 21.2695 10.4102 20.5127 10.8838 20.0586L16.7676 14.4531H2.73438C2.08496 14.4531 1.5625 13.9307 1.5625 13.2813V11.7188C1.5625 11.0693 2.08496 10.5469 2.73438 10.5469H16.7676L10.8838 4.94141C10.4053 4.4873 10.3955 3.73047 10.8643 3.2666Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <section class="formations">
+                <div class="title">
+                    <p>Les formations</p>
+                </div>
+                <div class="content">
+                    <div class="top">
+                        <div class="chrono">
+                            <p>Bac</p>
+                        </div>
+                        <div class="select">
+                            <button class="focus">Bac Général</button>
+                            <button>Bac Technologique</button>
+                        </div>
+                        <div class="content">
+                            <div class="text focus">
+                                <p>Si vous visez directement un diplômé d’ingénieur, il faudra privilégier des spécialités scientifiques telles que mathématiques, SI – sciences de l’ingénieur, ou NSI – numérique et sciences informatiques. Si vous optez pour une formation de niveau Bachelor (cf. ci-dessous), les possibilités d’accès sont plus larges. Il n’est pas obligatoire d’avoir un bac scientifique.</p>
+                            </div>
+                            <div class="text">
+                                <p>Le bac technologique STI2D est apprécié, ainsi que le bac professionnel SN (Systèmes numériques) ou Métiers de l’électricité et de ses environnements connectés. Si vous optez pour une formation de niveau Bachelor (cf. ci-dessous), les possibilités d’accès sont plus larges. Il n’est pas obligatoire d’avoir un bac scientifique.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="chrono">
+                            <p>Bac</p>
+                        </div>
+                        <div class="select">
+                            <button class="focus">Bac + 3</button>
+                            <button>Bac + 5</button>
+                        </div>
+                        <div class="content">
+                            <div class="text focus">
+                                <p>Pour se lancer dans la cybersécurité, vous devez vous orienter vers une formation en sécurité informatique. Si les BTS en informatique offrent des bases solides sur la programmation, ce sont des profils à partir de bac + 3 avec une spécialisation en cybersécurité qui retiendront l’attention des recruteurs. Parmi les formations bac + 3 en cyber sécurité, on peut citer :</p>
+                                <ul>
+                                    <li>Licence professionnelle informatique</li>
+                                    <li>Licence pro Métiers de l’informatique : administration et sécurité des réseaux, parcours sécurité des applications et des réseaux informatiques</li>
+                                    <li>Licence pro Métiers de l’informatique : administration et sécurité des systèmes et des réseaux, parcours cyberdéfense, anti-intrusion des systèmes d’information (CDAISI)</li>
+                                    <li>Licence générale d’informatique, parcours cyberdéfense</li>
+                                    <li>Bachelor Cybersécurité – Administration architecture sécurisée (disponible à l’ECE Ecole d’ingénieurs)</li>
+                                </ul>
+                            </div>
+                            <div class="text">
+                                <p>Il est possible d’opter directement pour un parcours intégré en 5 ans :</p>
+                                <ul>
+                                    <li>Diplôme d'écoles d'ingénieurs spécialisé en cybersécurité (disponible en secteur public et à l’ECE Ecole d’ingénieurs)</li>
+                                </ul>
+                                <p>On peut aussi envisager une poursuite d’étude à l’issue d’un niveau Bac+3 en informatique :</p>
+                                <ul>
+                                    <li>Master ingénieur systèmes, réseaux et cybersécurité</li>
+                                    <li>Master Cyberdéfense et sécurité de l’information (CDSI)</li>
+                                    <li>Mastère spécialisé cybersécurité expert FORENSIC et cybersécurité</li>
+                                    <li>Master of science cybersecurity management (disponible en secteur public et à l’ECE Ecole d’ingénieurs)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="front">
+            <div class="elements-right">
+                <img class="logo" src="../public/ECE_x_campus_cyber_2.png" alt="Le logo du campus cyber nouvelle-aquitaine">
+            </div>
+            <div class="elements-left">
+                <div class="element">
+                    <div class="title">
+                        <p>Navigation</p>
+                    </div>
+                    <div class="list">
+                        <a href="/">Accueil</a>
+                        <a href="/">Métiers</a>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="title">
+                        <p>Utilisateur</p>
+                    </div>
+                    <div class="list">
+                        <a href="/">Créer un compte</a>
+                        <a href="/">Se connecter</a>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="title">
+                        <p>Legal</p>
+                    </div>
+                    <div class="list">
+                        <a href="/">Mentions légales</a>
+                        <a href="/">Nous contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back">
+            <p>Inside ECE</p>
+        </div>
+    </section>
+    <script type="module" src="./src/animations.js"></script>
+    <script type="module" src="../src/background.js"></script>
+</body>
+</html>
